@@ -23,7 +23,6 @@ class App extends Component {
       { id: 10, player: "TJ McConnell" },
       { id: 11, player: "Wilson Chandler" }
     ],
-    url: "../public/sixers/"
   }
 
 
@@ -34,16 +33,15 @@ class App extends Component {
       if (tile.id === id) {
         if (tile.checked === true) {
           console.log("you've clicked this same tile twice");
+          // end game
+          // reset score
         } else {
           tile.checked = true;
+          // randomize tiles
+          // boost current score by 1
         }
       }
     });
-
-    // if theyve clicked a tile before, somehow randomize tiles, reset game, etc.
-    // update the score
-    // if score is greater than top score, update top score
-    // update state
   }
 
   render() {
