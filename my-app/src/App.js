@@ -43,6 +43,8 @@ class App extends Component {
 
           } else {
             this.setState({ currentScore: 0 });
+            resetChecked(this.state.tiles)
+
           }
         } else {
           tile.checked = true;
