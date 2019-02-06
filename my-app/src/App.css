@@ -1,0 +1,32 @@
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-container {
+  flex-grow: 1;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-size: 24pt;
+  font-weight: bold;
+  background: purple;
+  height: 50px;
+  align-items: center; 
+}
+
+.tile {
+  border: 5px solid red;
+  height: 100px;
+  width: 100px;
+  background-color: bisque;
+  margin: 10pt;
+}
+
+.game-board{
+  display: flex;
+  justify-content: space-evenly;
+  flex: row wrap;
+  margin: auto;
+}
